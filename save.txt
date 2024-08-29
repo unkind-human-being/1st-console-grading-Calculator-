@@ -1,0 +1,5 @@
+﻿Build started...
+1>------ Build started: Project: GradingCalculator, Configuration: Debug Any CPU ------
+1>C:\Users\OVCAA\source\repos\GradingCalculator\Form1.cs(39,74,39,75): warning CS0642: Possible mistaken empty statement
+1>  GradingCalculator -> C:\Users\OVCAA\source\repos\GradingCalculator\bin\Debug\GradingCalculator.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
