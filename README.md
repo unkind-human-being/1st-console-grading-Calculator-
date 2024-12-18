@@ -1,1 +1,41 @@
 # 1st-console-grading-Calculator-
+//C#
+using System;
+using System.Linq;
+
+namespace ConsoleGradeSystem
+{
+	public static class Program
+	{
+		public static void Main()
+		{
+			Console.WriteLine("THIS IS A GRADES AVERAGE COUNTING");
+			Console.WriteLine();
+			int num01;
+			int num02;
+            double average = 0;
+            //Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("How many subjects do you want to total? ");
+            num02 = Convert.ToInt32(Console.ReadLine());
+            //Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write("Put your total units : ");
+            num01 = Convert.ToInt32(Console.ReadLine());
+            double[] grades = new double[num02];
+            int[] units = new int[num02];
+            Console.WriteLine("Enter your grades and units for each subject:");
+            for (int i = 0; i < num02; i++)
+            {
+            	Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("Grades for subject " + (i + 1) + ": ");
+                grades[i] = Convert.ToDouble(Console.ReadLine());
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.Write("Units for subject " + (i + 1) + ": ");
+                units[i] = Convert.ToInt32(Console.ReadLine());
+                average += grades[i] * units[i];
+            }
+            average /= num01;
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("Average: " + average.ToString("N3"));
+		}
+	}
+}
